@@ -1,8 +1,4 @@
-"""
-    this module used to multiply two values
-"""
 def multipl_xy(value_1, value_2):
-    # function to multiply value_1 * value_2
     return value_1 * value_2
 
 

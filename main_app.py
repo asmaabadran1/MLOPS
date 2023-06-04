@@ -8,21 +8,20 @@ log_format = "[%(name)s][%(levelname)-6s] %(message)s"
 logging.basicConfig(format=log_format)
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO) # meaning 
-
+logger.setLevel(logging.INFO) 
 app = FastAPI()
 
-# main page 
+ 
 @app.get("/")
-def home():# end point 
-    return "hello salme keep smile."
+def home():
+    return "welcome"
 
-# get method use multiply_method
+
 @app.get("/multiply/{x, y}")
 def multiply(x : int,y: int):
     return multipl_xy(x, y)
 
-# post request 
+ 
 @app.post("/printData")
 def print_data(request: sample_data):
     return request.age, request.name, request.fav_numbers

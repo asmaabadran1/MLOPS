@@ -5,4 +5,4 @@ class sample_data(BaseModel):
     age: int
     name: str
     fav_numbers: list[int]
-    country : Optional[str] # can be none or passed 
+    country : Optional[str] 
